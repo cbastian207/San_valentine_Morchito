@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Morcito</title>
+        <link rel="stylesheet" href="css/valentine.css" />
+    </head>
+    <body>
+        <div id="valentineQuestion"><b>Quieres ser</br>Mi San Valentín?</b></div>
+        <button class="answerButton" onclick="location.href='thankyou.html'">
+        Sí
+        </button>
+        <button class="answerButton" id="noButton">No, lo pensaré</button>
+        <br />
+        <img src="please.png" height="498px" width="150px" alt="cat asking question" class="responsive" />
+        <script>
+            document
+                .getElementById("noButton")
+                .addEventListener("click", function () {
+                    var yesButton = document.querySelector(
+                        'button[onclick*="thankyou.html"]'
+                    );
+                    var currentFontSize = parseInt(
+                        window.getComputedStyle(yesButton).fontSize
+                    );
+                    yesButton.style.fontSize = currentFontSize + 10 + "px";
+
+                    document.getElementById("noButton").innerHTML =
+                        "No. (Morcito tiste tiste)";
+                });
+        </script>
+    </body>
+</html>

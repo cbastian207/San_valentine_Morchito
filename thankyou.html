@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Morcito</title>
+        <link rel="stylesheet" href="css/lastpage.css" />
+    </head>
+    <body>
+        <div id="thankyou"><b>Lo sabía morcito</b></div>
+
+        <img height="300px" id="rizz" src="morcito_acepto.png" alt="shi" class="responsive" />
+        <br />
+        <audio controls autoplay loop>
+        <source id="miAudio" src="audio/la_quiero_a_morir.mp3" type="audio/mpeg" />
+        tu navegador no aguanta el audio morcito...morcito tiste tiste
+        </audio>
+        <h1>No te vayas todavía, falta una cosita, morcito</h1>
+        <button class="button" onclick="location.href='prueba/continua/continua.html'">
+            Hazme click morcito
+        </button>
+
+        <script>
+            window.addEventListener("load", () => {
+                const audio = document.getElementById("miAudio");
+                audio.play().catch(() => {
+                console.log("El navegador bloqueó el autoplay");
+                });
+            });
+        </script>
+    </body>
+</html>
